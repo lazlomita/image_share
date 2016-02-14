@@ -9,5 +9,9 @@
 </body>
 
 <template name="images">
-	<img src="laptops.jpg" alt="lot of laptops" />
+
+{{#each images}}
+	<img src="{{img_src}}" alt="{{img_alt}}" />
+{{/each}}
+	
 </template>
